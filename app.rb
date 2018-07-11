@@ -26,6 +26,7 @@ class App < Sinatra::Base
   end
   
   get '/say/:word1/:word2/:word3/:word4/:word5' do
+    @sentence = ""
     5.times do
     end
   end
