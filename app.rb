@@ -40,7 +40,7 @@ class App < Sinatra::Base
     @number2 = params[:number2].to_i
     @calculation = 
     if "sum" == @operation
-      return "#{@number1 + @number2}"
+      return @calculation = @number1 + @number2
       elsif "subtract" == @operation
         return "#{@number1.public_send(@operation, @number2)}"
         elsif "multiply" == @operation
