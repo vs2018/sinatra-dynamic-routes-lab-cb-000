@@ -48,6 +48,7 @@ class App < Sinatra::Base
          else 
            @calculation = @number1 / @number2
          end
+    "#{@calculation}"
   end
 
 end
