@@ -42,11 +42,11 @@ class App < Sinatra::Base
     if "sum" == @operation
       return @calculation = @number1 + @number2
       elsif "subtract" == @operation
-        return "#{@number1.public_send(@operation, @number2)}"
+        return @calculation = @number1 - @number2
         elsif "multiply" == @operation
-         return "#{@number1.public_send(@operation, @number2)}"
+         return @calculation = @number1 * @number2
          else 
-           return "#{@number1.public_send(@operation, @number2)}"
+           @calculation = @number1 / @number2
          end
   end
 
