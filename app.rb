@@ -46,6 +46,7 @@ class App < Sinatra::Base
          return "#{@number1 @operation @number2}"
          else 
            return "#{@number1 @operation @number2}"
+         end
   end
 
 end
