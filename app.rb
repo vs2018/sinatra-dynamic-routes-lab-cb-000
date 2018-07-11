@@ -40,12 +40,12 @@ class App < Sinatra::Base
     @number2 = params[:number2].to_i
     @calculation = nil
     if "sum" == @operation
-      return @calculation = @number1 + @number2
+      @calculation = @number1 + @number2
       elsif "subtract" == @operation
         return @calculation = @number1 - @number2
         elsif "multiply" == @operation
          return @calculation = @number1 * @number2
-         else 
+         elsif "divide" == @operation  
            return @calculation = @number1 / @number2
          end
     "#{@calculation}"
