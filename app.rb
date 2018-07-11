@@ -20,7 +20,7 @@ class App < Sinatra::Base
     @new_phrase = @phrase.split("%20").join(" ")
     @result = []
     @num.times do
-      @result += @phrase
+      @result << @new_phrase
     end
     print @result
     "#{@result}"
