@@ -22,7 +22,7 @@ class App < Sinatra::Base
     @num.times do
       @result += @phrase
     end
-    @result
+    print @result
     "#{@result}"
   end
 
