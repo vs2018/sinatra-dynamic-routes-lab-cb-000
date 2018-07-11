@@ -41,6 +41,11 @@ class App < Sinatra::Base
     if "sum" == @operation
       return "#{@number1 @operation @number2}"
       elsif "subtract" == @operation
+        return "#{@number1 @operation @number2}"
+        elsif "multiply" == @operation
+         return "#{@number1 @operation @number2}"
+         else 
+           return "#{@number1 @operation @number2}"
   end
 
 end
