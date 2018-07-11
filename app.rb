@@ -39,7 +39,7 @@ class App < Sinatra::Base
     @number1 = params[:number1].to_i
     @number2 = params[:number2].to_i
     if "sum" == @operation
-      return "#{@number1 @operation @number2}"
+      return "#{@number1 @operation.to_sym @number2}"
       elsif "subtract" == @operation
         return "#{@number1 @operation @number2}"
         elsif "multiply" == @operation
