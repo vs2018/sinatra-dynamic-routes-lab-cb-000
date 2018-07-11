@@ -22,8 +22,7 @@ class App < Sinatra::Base
     @num.times do
       @result << @new_phrase
     end
-    @result.join(" ")
-    "#{@result}"
+    "#{@result.join(" ")}""
   end
 
 end
